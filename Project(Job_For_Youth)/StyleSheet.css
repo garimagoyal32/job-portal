@@ -1,0 +1,112 @@
+﻿body
+{
+    margin: 0px;
+    font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+    background-color: #CCC; /*background-image:url(image1/2.jpg);*/
+    background-size: cover;
+}
+
+#banner
+{
+    /*  background-image: url('../Images/banner.jpg');     background-repeat: no-repeat;     background-size: cover;*/
+    height: 180px;
+}
+#navigation
+{
+    margin-top: -13px;
+    font-size: small;
+    height: 80px;
+    border-bottom: 2px solid #000; /*   background-image:url(image1/.jpg);    background-size: cover;*/
+    background-color: #999;
+    text-shadow: 0.1em 0.1em #333;
+    font-family: 'Times New Roman' , Times, serif;
+}
+
+#nav
+{
+    padding: 20px;
+    list-style: none;
+}
+
+#nav ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: none;
+}
+
+#nav li
+{
+    font-size: 24px;
+    float: left;
+    position: relative;
+    width: 168px;
+    height: 44px;
+    top: -13px;
+    left: 2px;
+}
+
+#nav li ul li
+{
+    border: 3px solid #E3E3E3;
+}
+
+#nav a:link, #nav a:active, #nav a:visited
+{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav a:hover
+{
+    color: black;
+}
+#Login
+{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    height: 0px;
+}
+
+#content_area
+{
+    float: left;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    width: 900px;
+}
+/*#sidebar
+{
+    float: right;
+    width: 250px;
+    height: 400px;
+    margin: 20px 10px 20px 10px;
+    padding: 10px;
+    border: 2px solid #E3E3E3;
+    background-image: url(image/6.jpg);
+    background-size: cover;
+}
+
+*/
+#footer
+{
+    clear: both;
+    width: auto;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0.1em 0.1em #333;
+    background-color: #999;
+    border-top: 2px solid #000;
+}
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs"
+    Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+<link href="StyleSheet.css" rel="stylesheet"
+                    type="text/css" />
+</head>
+<body>
+    <form id="form2" runat="server">
+    <div id="wrapper">
+        <div id="navigation">
+            <ul id="nav">
+                <li><a href="Home.aspx">Home</a></li>
+                <li><a href="Recruiter_Profile.aspx">Your Profile</a></li>
+                <li><a href="#">Search Candidates</a></li>
+                <li><a href="Select_Package.aspx">Post Job</a></li>
+                <li><a href="Home.aspx">
+                    <asp:Button ID="Button1" runat="server" Text="Sign_Out" 
+                        onclick="Button1_Click" /></a></li>
+                <li><a href="#">About us</a></li>
+                <li style="float: right">
+                    <div id="Login">
+                        <asp:Label ID="lblLogin" runat="server" Text="Label"></asp:Label>
+                        <asp:LinkButton ID="LinkButton1" runat="server">Login</asp:LinkButton>
+                        <br />
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="banner">
+            <asp:ScriptManager ID="Scriptmanager1" runat="server">
+            </asp:ScriptManager>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <asp:Timer ID="Timer1" runat="server" ontick="Timer1_Tick">
+                    </asp:Timer>
+                    <asp:Image ID="Image1" runat="server" Height="180px" Width="100%" />
+                    <br />
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+        <div>
+            <p>
+                <marquee><font size="5" color="#837669"><i>JOB FOR YOUTH.COM</i></font></marquee>
+            </p>
+        </div>
+        <div id="content_area">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="sidebar">
+        </div>
+        <div id="footer">
+            <p>
+                @COPYRIGHT.COM</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
